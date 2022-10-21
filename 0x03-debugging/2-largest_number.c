@@ -10,21 +10,21 @@
 
 int largest_number(int a, int b, int c)
 {
-int l;
+	int l;
 
 if (((a >= b) && (a > c)) || ((a >= c) && (a > b)))
 {
-l = a;
+	l = a;
 }
 else if (((b >= a) && (b > c)) || ((b >= c) && (b > a)))
 {
-l = b;
-}
+	l = b;
 }
 else
 {
-l = c;
+	l = c;
 }
 
 return (l);
+
 }
