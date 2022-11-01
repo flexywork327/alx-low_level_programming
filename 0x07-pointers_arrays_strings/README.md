@@ -20,3 +20,15 @@ Tasks
 	Write a function that sets the value of a pointer to a char.
 9. My primary goal of hacking was the intellectual curiosity, the seduction of adventure
 	Create a file that contains the password for the crackme2 executable.
+	
+<!-- For the  advanced task no.9	 -->
+
+1: open the file using vi -b 101-crackme_password
+
+2: When u see the vi window, don't use the insert mode, just type :set binary and hit enter
+
+3: type :set noeol and hit enter
+
+4: use the insert mode and type abc123
+
+5: esc :wq hit enter
