@@ -1,0 +1,27 @@
+ #!/bin/bash
+
+# This script will push your code to GitHub.
+
+
+# Check if any parameters were passed.
+if [ $# -eq 0 ]; then
+  echo "Error: No commit message and token was provided."
+  echo "========== Usage: ./push.sh <commit message> <token> =========="
+  echo "========== Example: ./push.sh \"Initial commit\" 1234567890 =========="
+  exit 1
+fi
+
+# Add all changes to the staging area.
+git add .
+
+# Commit the changes with a message.
+echo "Pushing code to GitHub..."
+git commit -m "$1"
+
+# Push the changes to the remote repository.
+git push "https://$2@github.com/flexywork327/alx-low_level_programming.git"
+
+# Print a success message.
+echo "Commited '$1' and pushed to GitHub.\n"
+echo "Code successfully pushed to GitHub."
+
